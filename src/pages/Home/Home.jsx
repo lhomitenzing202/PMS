@@ -21,6 +21,7 @@ const Home = () => {
     
     <>
     <Navbar/>
+    <div className="card-coinatiner">
     {
         Products.map((Product)=>{
             return (
@@ -33,6 +34,8 @@ const Home = () => {
             )
         })
     }
+    </div>
+
     </>
   )
 }

@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -7,6 +7,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+} */
+
+.card-coinatiner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -15,6 +21,8 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .card img {
