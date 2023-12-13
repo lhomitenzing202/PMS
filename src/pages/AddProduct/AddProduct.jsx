@@ -70,7 +70,7 @@ return (
    
    <div id="Product-form">
     <form onSubmit={AddProduct}>
-           <label htmlFor="ProductImage">Product Image URL:</label>
+           <label htmlFor="ProductImg">Product Image URL:</label>
            <input type="text" id="ProductImg" name="ProductImg" required />
    
            <label htmlFor="ProductName">Product Name:</label>
