@@ -18,7 +18,7 @@ const SingleProduct =  () => {
     if(response.status==200){
       navigate("/")
     }else{
-      "Something went wrong"
+      alert("Something went wrong!!")
     }
   }
  
@@ -41,6 +41,7 @@ const SingleProduct =  () => {
         <p className="product-description">{product.ProductDescription}</p>
         <mark> {product.ProductMaterial}</mark><br/>
         <button onClick={deleteProduct}>Delete</button>
+        <button onClick={()=>navigate(`/editProduct/${product.id}`)}>edit </button>
         
         </div>
     </>

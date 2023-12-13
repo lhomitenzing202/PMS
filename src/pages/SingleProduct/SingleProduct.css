@@ -13,6 +13,11 @@
     margin-top: 20px;
 }
 
+.card button {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
 .card img {
     width: 100%;
     height: 150px;
