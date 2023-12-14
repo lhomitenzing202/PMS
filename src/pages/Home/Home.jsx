@@ -27,7 +27,7 @@ const Home = () => {
     {
         Products.map((Product)=>{
             return (
-            <div key={Product.id}  className="card">
+            <div key={Product.id}  className="card1">
     <img src={Product.ProductImg} alt="Product Image"/>
         <h2 className="product-name">{Product.ProductName}</h2>
         <p className="product-description">{Product.ProductDescription}</p>

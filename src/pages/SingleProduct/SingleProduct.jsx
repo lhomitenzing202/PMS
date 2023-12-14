@@ -34,15 +34,16 @@ const SingleProduct =  () => {
   return (
    <>
 <Navbar/>
-
+<div id="Product-form">
 <div className="card">
 <img src={product.ProductImg} alt="Product Image"/>
         <h2 className="product-name">{product.ProductName}</h2>
         <p className="product-description">{product.ProductDescription}</p>
-        <mark> {product.ProductMaterial}</mark><br/>
+        <mark> {product.ProductMaterial}</mark> <br/>
         <button onClick={deleteProduct}>Delete</button>
         <button onClick={()=>navigate(`/editProduct/${product.id}`)}>edit </button>
         
+        </div>
         </div>
     </>
   )
