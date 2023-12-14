@@ -1,4 +1,4 @@
-import { Navigate, useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import Navbar from "../../components/Navbar/Navbar"
 import "./EditProduct.css"
 import { useEffect, useState} from "react"
@@ -9,14 +9,14 @@ const EditProduct = () => {
 
     const {id} = useParams()
     const [product,setProduct]=useState([])
-    const navigate = useNavigate()
+    const Navigate = useNavigate()
 
     //edit product
     const EditProduct = async(e)=>{
         e.preventDefault()
         const response = await axios.put("https://65732380192318b7db419d5a.mockapi.io/Product/" + id,product)
-       if(response.status==200){
-            navigate("/singleProduct/"+id)
+     if(response.status==200){
+            Navigate("/singleProduct/"+id)
         } else {alert("something went wrong!!")
         }
     }

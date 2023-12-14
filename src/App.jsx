@@ -2,8 +2,8 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home/Home'
 import AddProduct from './pages/AddProduct/AddProduct'
-import SingleProduct from './pages/singleProduct/singleProduct'
 import EditProduct from './pages/EditProduct/EditProduct'
+import SingleProduct from './pages/SingleProduct/SingleProduct'
 
 
 
